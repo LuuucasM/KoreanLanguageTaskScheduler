@@ -1,2 +1,2 @@
 # KoreanLanguageTaskScheduler
-A program that suggests tasks to do for the day
+A program that suggests korean study tasks to do for the day

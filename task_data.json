@@ -1,14 +1,1 @@
-{
-"AudioListen":
-    {"times_completed":1,"times_to_do":2},
-"GrammarGen":
-    {"times_completed":1,"times_to_do":4},
-"Journaling":
-    {"times_completed":2,"times_to_do":1},
-"KoreanNumbers":
-    {"times_completed":2,"times_to_do":5},
-"TextbookRead":
-    {"times_completed":2,"times_to_do":2},
-"SentenceMine":
-    {"times_completed":1,"times_to_do":3}
-}
+{"AudioListen":{"times_completed":1,"times_to_do":2},"GrammarGen":{"times_completed":3,"times_to_do":4},"Journaling":{"times_completed":3,"times_to_do":1},"KoreanNumbers":{"times_completed":2,"times_to_do":5},"TextbookRead":{"times_completed":3,"times_to_do":2},"SentenceMine":{"times_completed":3,"times_to_do":3}}

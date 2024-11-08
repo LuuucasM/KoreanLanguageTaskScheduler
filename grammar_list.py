@@ -61,7 +61,7 @@ grammar = ["-고 싶다",
            "-(으)ㄹ 때가 있다",
            "-ㄴ/는 다고",
            "-자마자",
-           "-ㄴ/은 지 되다",
+           "-ㄴ/은 지 <time> 되다",
            "-을/를/기 위해(서)",
            "-을/를 통해(서)",
            "(이)라서",
@@ -77,7 +77,6 @@ grammar = ["-고 싶다",
            "VERB + -아/어 드릴까요?",
            "NOUN + 말고 + NOUN",
            "VERB + ㄴ/는다!",
-           #####
            "-씩",
            "(이)나",
            "거나",
@@ -89,7 +88,8 @@ grammar = ["-고 싶다",
            "-(으)며",
            "-ㄹ/을 만하다",
            "-던, -았/었단",
-           "건마는/건만"
+           "건마는/건만",
+           "(으)ㄹ 정도로"
            ]
 
 grammar_reference = {"-고 싶다": '''ngk chap 4
@@ -126,7 +126,9 @@ Used for:
 \tAsking question to ones self
 \tshall we
 \tshall i
-\t(if subject is 3rd person or object) do you think..?''',
+\t(if subject is 3rd person or object) do you think..?
+\t Used while asking for someones opinion, suggesting to do something, or questions/thoughts/guesses
+''',
                      "-어야.아야 되다": '''ngk chap 8
 note: using -어야.아야 하다 means the same thing and soudns a bit more formal''',
                      "-(으)려고 하다": '''ngk chap 9
@@ -177,7 +179,14 @@ usually has a sort of annoying connotation to it as if the speaker is annoyed at
 attached to verb stem to express prohibition or refusal of permission
 "(someone) should not do (something)
 ''',
-                     "-는 동안": "ngk chap 13",
+                     "-는 동안": '''
+ngk chapter 13
+means while -ing
+는 동안 is interchangable with (으)ㄹ 때
+tense is marked in the following clause not in the 동안 clause
+집에서 쉬는 동안 첵을 많이 읽었어요. -> while resting at home I read of books
+한국에 있는동안 여행을 많이 했습니다. -> while i was in korea i travelled a lot
+                     ''',
                      "(으)ㄴ 적이 있다/없다": "ngk chap 13",
                      "-(으)ㄹ래요": "ngk chap 14",
                      "-거든요": '''ngk chap 14
@@ -198,11 +207,12 @@ but with this grammar point i am sure it is still in that state
 best translated as "it seems"
 also used to express politeness even when the speaker has clear evidence''',
                      "(으)ㄴ/는 편이다": '''ngk chap 15
-to tend to
-refers to the belonging to a side or group among possiblities
-express a characteristic of a person or object in a
-non-conclusive mannar by grouping the person or object
-into a general category''',
+means to tend to
+refers to the belonging to a side or group among possiblities express a characteristic of a 
+person or object in a non-conclusive mannar by grouping the person or object into a general category
+요즘 온라인 쇼핑이 백화점보다 싼 편이에요. -> recently online shopping tends to be cheaper than department stores
+토론토 겨울 날씨는 괘 추운 편이에요. -> toronto winter weather tends to be quite cold
+''',
                      "모든, 다, 모두": '''
 from howtostudykorean lesson 25
 모든: is the most common way to say every__
@@ -303,6 +313,7 @@ the students became quiet
 https://www.howtostudykorean.com/upper-intermediate-korean-grammar/unit-4-lessons-84-91/lesson-84/
 ''',
                      "-ㄴ/은 지 <time> 되다": '''
+https://www.howtostudykorean.com/unit-2-lower-intermediate-korean-grammar/unit-2-lessons-26-33/lesson-30/#303
 means "since" some time
 eg. 밥을 먹은 지 5분 됐다 -> its been 5 minutes since i have been eating
 eg. 한국에서 산 지 25 년 됐어요 ->it has been 25 years since ive been living in korea .
@@ -311,7 +322,9 @@ for verbs that are continuous like eating, showering, exercising, studying it ca
 denote both how long has it been since you did it or how long you have been doing it for
 for verbs that are one time they always mean how long since that exact moment happen
 in context, it is usually very easy to understand
-https://www.howtostudykorean.com/unit-2-lower-intermediate-korean-grammar/unit-2-lessons-26-33/lesson-30/#303
+can also use 얼마나 and 오래 to ask questions about how long its been since whatever
+한국어를 공부한 지 얼마니 되었어요? -> how long have you been studying korean for?
+운동한 지 오래 됐어? -> have you been exercising for a long time?
 ''',
                      "-을/를/기 위해(서)": '''
 https://www.topikguide.com/noun-%EC%9D%84-%EB%A5%BC-%EC%9C%84%ED%95%B4%EC%84%9C-%EC%9C%84%ED%95%B4-and-verb-%EA%B8%B0-%EC%9C%84%ED%95%B4%EC%84%9C-%EC%9C%84%ED%95%B4-korean-grammar/
@@ -483,9 +496,9 @@ can also mean if.. or not...
 eg. 수술을 받을지 안받을지 확실하지 않아요. -> im not sure if i will get surgery or not
 also clauses dont nessearily have to be the same thing repeated
 eg. 내일 공원에 갈지 영화를 볼지 모르겠어요. -> im not sure if i will go to the park or watch a movie tomorrow
-form can also be used to ask a question which would sually end in 알다
+form can also be used to ask a question which would usually end in 알다
 eg. 서울에 어떻게 가는지 알아요? -> do you know how to get to seoul?
-and can be responded with: 서울에 어떻게 가는지 알아요.
+and can be responded with: 서울에 어떻게 가는지 알아요. as in they know how to get to seoul
 ''',
                      "는/ㄴ/은 척(체)하다": '''
 from https://www.howtostudykorean.com/upper-intermediate-korean-grammar/unit-4-lessons-92-100/lesson-98/#981
@@ -565,6 +578,21 @@ this means there is no feeling of disapointment directly coming from the grammar
 the sentences its used it is typical used in these types of sensetences
 eg. every day I clean this place but since its old it can never look clean ->
 여간 매일 총소하건만 낡아서 깨끗해 보이지 않아요
+''',
+                     "(으)ㄹ 정도로": '''
+from https://www.koreantopik.com/2017/05/l2g42-av-grammar-to-extent-thatexpress.html
+means to express the degree or extent of the action or state
+has 2 forms: (으)ㄹ 정도로 (used in the middle of sentence) and (으)ㄹ 정도이다 (used at end of sentence)
+저는 몇 번째 다시 볼 정도로 이 드라마를 좋아애요 -> i like this drama to the extent i watched it again several times
+너무 많이 비를 와서 앞이 잘 안보일 정도예요. -> it is raining so much i can hardly see infront of me
+''',
+                     "는/ㄴ/은 척하다": '''
+from https://www.howtostudykorean.com/upper-intermediate-korean-grammar/unit-4-lessons-92-100/lesson-98/
+means to pretend to
+for verbs 는 for present tense, (으)ㄴ for past tense
+for adjectives and 이다 is 은
+엄마가 오자 저는 설거지하는 쳑했어요. -> as soon as my mom came i pretended to do the dishes
+여자는 자기 남자 친구한테 귀여운 척했어요. -> the girl pretended to be cute to her boyfriend
+also there is an alterantive grammar that uses 체하다 which has similar, if not identical meaning
 '''
                      }
-
